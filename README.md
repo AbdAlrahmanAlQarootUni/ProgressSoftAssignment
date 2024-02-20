@@ -27,7 +27,6 @@ Optionally, include a table of contents for larger documents to improve navigabi
 - [Features](#features)
 - [Configuration](#configuration)
 - [Testing](#testing)
-- [Contributing](#contributing)
 ```
 
 ### Installation
@@ -38,8 +37,8 @@ Instructions on how to install and set up your project.
 ## Installation
 
 ```bash
-git clone https://yourproject.git
-cd yourproject
+git clone https://github.com/AbdAlrahmanAlQarootUni/ProgressSoftAssignment
+cd ProgressSoftAssignment
 ./mvnw install
 ```
 ```
@@ -100,15 +99,5 @@ Run the following command to execute the tests:
 ```bash
 ./mvnw test
 ```
-```
-
-### Contributing
-
-Guidelines for contributing to the project, if applicable.
-
-```markdown
-## Contributing
-
-We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit changes and for our code of conduct.
 ```
 
