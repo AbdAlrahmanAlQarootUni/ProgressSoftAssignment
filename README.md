@@ -1,8 +1,3 @@
-Proper documentation using Markdown (MD) refers to creating comprehensive, structured, and easily readable documents using the Markdown language. Markdown is a lightweight markup language with plain-text formatting syntax that can be converted to HTML and other formats. It's widely used for README files, documentation, notes, and for content in version control systems like GitHub, Bitbucket, or GitLab.
-
-When documenting a project in Markdown, the goal is to provide clear, concise, and useful information about the project's purpose, setup, usage, features, configuration, and any other relevant details. This ensures that developers, users, and any stakeholders can easily understand and work with the project.
-
-Here's a basic outline of how to structure your project documentation using Markdown:
 
 ### Project Title
 
@@ -117,16 +112,3 @@ Guidelines for contributing to the project, if applicable.
 We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit changes and for our code of conduct.
 ```
 
-### License
-
-Specify the project license.
-
-```markdown
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-```
-
-### Conclusion
-
-Using Markdown (MD) for documentation ensures that your project's documentation is accessible and readable. The key is to keep the documentation updated as the project evolves, ensuring that new contributors or users can easily get up to speed.
