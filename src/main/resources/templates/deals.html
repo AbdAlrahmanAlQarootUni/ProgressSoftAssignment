@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FX Deals</title>
+</head>
+<body>
+<h2>FX Deals</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Deal Unique ID</th>
+        <th>From Currency ISO Code</th>
+        <th>To Currency ISO Code</th>
+        <th>Deal Timestamp</th>
+        <th>Deal Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="deal : ${deals}">
+        <td th:text="${deal.dealUniqueId}"></td>
+        <td th:text="${deal.fromCurrencyIsoCode}"></td>
+        <td th:text="${deal.toCurrencyIsoCode}"></td>
+        <td th:text="${deal.dealTimestamp}"></td>
+        <td th:text="${deal.dealAmount}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

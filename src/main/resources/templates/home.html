@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FX Deal Submission</title>
+</head>
+<body>
+<h2>FX Deal Submission Form</h2>
+<form th:action="@{/submitDeal}" th:object="${fxDeal}" method="post">
+    <div>
+        <label for="dealUniqueId">Deal Unique ID:</label>
+        <input type="text" id="dealUniqueId" th:field="*{fxDeal.dealUniqueId}" />
+        <div th:if="${#fields.hasErrors('dealUniqueId')}" th:errors="*{fxDeal.dealUniqueId}">Deal Unique ID Error</div>
+    </div>
+    <div>
+        <label for="fromCurrencyIsoCode">From Currency ISO Code:</label>
+        <input type="text" id="fromCurrencyIsoCode" th:field="*{fxDeal.fromCurrencyIsoCode}" />
+        <div th:if="${#fields.hasErrors('fromCurrencyIsoCode')}" th:errors="*{fxDeal.fromCurrencyIsoCode}">From Currency ISO Code Error</div>
+    </div>
+    <div>
+        <label for="toCurrencyIsoCode">To Currency ISO Code:</label>
+        <input type="text" id="toCurrencyIsoCode" th:field="*{fxDeal.toCurrencyIsoCode}" />
+        <div th:if="${#fields.hasErrors('toCurrencyIsoCode')}" th:errors="*{fxDeal.toCurrencyIsoCode}">To Currency ISO Code Error</div>
+    </div>
+    <div>
+        <label for="dealTimestamp">Deal Timestamp:</label>
+        <input type="datetime-local" id="dealTimestamp" th:field="*{fxDeal.dealTimestamp}" />
+        <div th:if="${#fields.hasErrors('dealTimestamp')}" th:errors="*{fxDeal.dealTimestamp}">Deal Timestamp Error</div>
+    </div>
+    <div>
+        <label for="dealAmount">Deal Amount:</label>
+        <input type="number" id="dealAmount" th:field="*{fxDeal.dealAmount}" step="0.01" />
+        <div th:if="${#fields.hasErrors('dealAmount')}" th:errors="*{fxDeal.dealAmount}">Deal Amount Error</div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
